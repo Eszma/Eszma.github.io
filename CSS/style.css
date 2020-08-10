@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=EB+Garamond:wght@600&family=MuseoModerno&display=swap')
+
+@font-face {
+    font-family:"Raleway";
+    src: url("Raleway/Raleway-ExtraLight.ttf");
+    font-weight: 800;
+}
+@font-face {
+    font-family:"Raleway-light";
+    src: url("Raleway/Raleway-ExtraLight.ttf");
+    font-weight: 200;
+}
+#bgr {
+    background: url("D:\ifksp\html_proba\img\bgr.jpg")
+}
+h1 {
+    text-align: center;
+    
+}
+#Bambi {
+    background-color: rgb(94, 37, 17, 0.95);
+    position: fixed;
+    top:0 px;
+    left: 0%;
+    margin:0px;
+    color: whitesmoke;
+           
+}
+html
+{
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Bitter', serif;
+    text-transform: initial;
+    line-height: 40px;
+}
+ul
+{
+    font-size: 16px;
+    font-family: 'MuseoModerno', cursive;
+    font-style: initial;
+    text-align: center;
+    font-weight: 800;
+}
+ol
+{
+    font-size: 16px;
+    font-style: initial;
+    text-align: center;
+    font-weight: bolder;
+}
+#Hambis-header {
+    color: rgb(73, 29, 13);
+    background-color: goldenrod;
+}
+#Beilage-Header {
+    color: darkgreen;
+    background-color: rgb(219, 168, 39);
+}
+h5 {
+    color:rgb(173, 36, 36);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-style: initial;
+    text-align: center;
+    text-transform: uppercase;
+    border-top:dashed rgb(180, 36, 36);
+    }
+.content {
+    color:rgb(65, 38, 11);
+    font-size: 12 px;
+    font-family: "Raleway-light";
+    text-align: center;
+    font-weight: lighter;
+    max-width: 85%
+    min-width: 70%
+
+}
+.bold {
+    font-weight: bold;
+}
+
+p {
+    color:rgb(65, 38, 11);
+    font-size: 10 px;
+    font-family: "Raleway-light";
+    text-align: center;
+    font-weight: lighter;    
+}
+#img1 {
+    /*display: none;*/
+    visibility: visible;
+    position: relative;
+    left: 50 px;
+    
+}
+img {
+    width: 90%;
+    box-shadow: 5px 6px 10px rgb(12, 12, 12) ;
+    margin: 2%;
+}
