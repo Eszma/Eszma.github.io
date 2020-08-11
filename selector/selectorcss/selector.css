@@ -1,0 +1,53 @@
+body {
+    background-color:#e69d07
+}
+.login-div {
+    padding: 20px;
+    border: solid 1px #c0c0c0;
+    box-shadow: 0 0 2px #777777;
+    display: inline-block
+}
+.login-div input {
+    display:block;
+    margin-bottom: 10 px
+}
+form#login input {
+    background-color: bisque;
+}
+input.form-control [type="email"]
+{
+    background-color: burlywood;
+    padding: 50 px;
+    border-radius: 10 px;
+    box-shadow: 0 0 3px;
+}
+.login-div input [type="password"]
+{
+    border: salmon 10px;
+}
+a {text-decoration: none;
+color: #eee;
+font-weight: bold;
+}
+a:hover  {
+    text-decoration: underline;
+    color:#fff
+}
+/*psedu selectors*/
+.login-div button:hover {
+    box-shadow: cornsilk 0 0 5px;
+}
+.login-div input:focus {
+    box-shadow: darkgoldenrod 2px 5px 1px;
+    border: none;
+}
+ul li:last-child {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+ul li:nth-child(2) {
+    color: rgb(105, 13, 75);
+}
+/*input [class*=alma] bárhol
+input [class^=alma] elején
+input [class$=alma] végén/*
