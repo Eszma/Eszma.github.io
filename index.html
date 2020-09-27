@@ -1,110 +1,134 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/pages/bootstrap/css/bootstrap.min.css">
-    <title>Bambi Hambi</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Eszter Szabó CV</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/index.html">Bambi Hambi</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/pages/produktion.html">Produktion<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/pages/orders.html">Bestellung</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about.html">Über uns</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/pages/contact.html">Kontakt</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/pages/login.html">Login</a>
-          </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-<body id="bgr" style="background:rgb(206, 154, 64, 0.92)">
-    <h1>Bambi Hambi</h1>
-     <h3>Megéheztél egy hambira? Jó helyen jársz! h:ez egy blokk elem
-    </h3>
-<h4 style="color: rgb(18, 18, 124)">Hast du Hunger für ein Hambi? Du bist ja der richtige Platz.
-    </h4>
-    <a target="blank"  href="https://wellandfit.hu/dieta/2020-06/3-mennyei-dietas-hamburger-recept/"><img width="1240" src="img/hamburger.jpg" alt="Leckere Hambi">
-        <p><a target="blank" href="https://wellandfit.hu/dieta/2020-06/3-mennyei-dietas-hamburger-recept/">3 Hambis von Himmel</a>
-    </p>  
-<div>
-    <img id="img1" src="img/pommes.jpg">
-    <img src="img/limonade.jpg">
-</div>
-<ul>
-    <li><a href="/">Hauptseite</a></li>
-    <li><a target="blank" href="pages/produktion.html">Produktion</a></li>
-    <li><a target="blank" href="pages/orders.html">Bestellung</a></li>
-    <li><a target="blank" href="about.html">About</a></li>
-</ul>
-    <h5 id="Hambis-header">Hambis (Unordered List)</h5>
-   
-    <ul>
-     <li>Bambi Hambi</li>
-     <li>Vega Hambi</li>
-     <li>Käse Hambi</li>
-        <ul><li>Ementale</li>
-        <li>Gouda</li></ul>
-     <li>Eier Hambi</li>
-     <li>Überraschung Hambi</li>
- </ul>
- <h5 id="Beilage-Header">Beilage (Ordered List)</h5>
- <ol>
-    <li>Chili souce</li>
-    <li>Mayo</li>
-    <li>Extra Hambi souce</li>
-    <li>Mikado</li>
-    <li>Tomato</li>
-    <li>Pommes</li>
-</ol>
-<a target="blank" href="pages/orders.html">Orders</a>
-<h5>Schritt der Bestellung (Ordered List)</h5>
- <ol>
-    <li>Wählen Sie die Hambis!</li>
-    <li>Wählen Sie die Beilagen!</li>
-    <li>Bezahlen Sie, bitte!</li>
-    <li>Essen Sie die Hambis!</li>
-</ol>
 
-<h5>Lorem ipsum</h5>
-<p class="content">A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5 évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker.
+<body>
+    <header>
+        <div id="darkener"></div>
+        <div id="home">Eszter Szabó</div>
+        <nav>
+            <div id="burger">
+                <div></div>
+                <div></div>
+                <div></div>   
+            </div>
+            <ul>
+                <li><a id="nav-intro">Daten</a></li>
+                <li><a id="nav-about">Kontakt</a></li>
+                <li><a>Ausbildungen</a></li>
+                <li><a>Arbeit</a></li>
+                <li><a>Interesse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="intro">
+        <div id="profile"><img src="/profile.jpg" alt="Eszter Szabó"></div>
+        <div id="details">
+            <h1>Eszter Szabó</h1>
+            <h3>Kantorin</h3>
+            <dl>
+                <dt>Alt</dt>
+                <dd>25</dd>
+                <dt>E-Mail</dt>
+                <dd>szabeszter&#x40;gmail.com</dd>
+                <dt>Adress</dt>
+                <dd>Waisenhausstraße 46A 80637, München</dd>
+                <dt>Telefon</dt>
+                <dd>+49 175 785 54 25 </dd>
+                <dt>Nationalität</dt>
+                <dd>ungarisch</dd>
+            </dl>
 
-    Miért használjuk?
-    Ez egy régóta elfogadott tény, miszerint egy olvasót zavarja az olvasható szöveg miközben a szöveg elrendezését nézi. A Lorem Ipsum használatának lényege, hogy többé-kevésbé rendezettebb betûket tartalmaz, ellentétben a Tartalom helye, Tartalom helye-féle megoldással. Sok desktop szerkesztõ és weboldal szerkesztõ használja a Lorem Ipsum-ot mint alapbeállítású szövegmodellt, és egy keresés a lorem ipsum-ra sok félkész weboldalt fog eredményezni.
-    
-    </p>
-<p>
-    <span class="bold"> Pápai papi pipa papája,</span> pereskedett a pápai pipa papi pipájával.</p>
-<h4>Tanulós rész</h4>
- <p>   Es ist der erste Paragraph.</p>
+        </div>
+        <div></div>
+        <div></div>
+    </section>
+    <section id="about">
+        <h1>Über mich</h1>
+        <p>Átképzetem magam ennek anak, mert minden érdekel. Bő egy éve vagyok itt, és szeretném kihasználni az itteni ehetőségeket.
+            ECT.......................................
+        </p>
+        <p>
 
-<p> Es ist der zweite Paragraph.</p>
+        </p>
+        <dl>
+            <dt>Alt</dt><dd>25</dd>
+            <dt>E-Mail</dt><dd>szabeszter&#x40;gmail.com</dd>
+        </dl>
+    </section>
+    <section>
+        <h1>Ausbildungen</h1>
+        <h3>Schule</h3>
+        <dl>
+            <dt>2020</dt><dd>Web-Entwickler Kurse</dd>
+            <dt>2017-2019</dt><dd>Kodály Zoltán Musikfachschule, Kirchenmusik</dd>
+            <dt>2013-2017</dt><dd>ELTE Universität Budapest, Grundschullehrerfach, Bachelor Diplom
+                Hauptfach Mathematik</dd>
+        </dl>
+        <h3>Sprache</h3>
+        <dl>
+            <dt>2020</dt><dd>Goethe Zertifikat B2</dd>
+            <dt>2017</dt><dd>englich TELC B2</dd>
+        </dl>
+    </section>
+    <section>
+        <h1>Arbeit</h1>
+        <dl>
+            <dt>2019-2020</dt><dd>Rischart</dd>
+            <p>Nach der Saison habe ich bei Max Rischart’s Backhaus im Ostbahnhof als Verkäuferin von Mitte November bis in Mitte Mai (trotz Einschränkungen) gearbeitet.
+                 Meine Aufgabe war es die feinsten Backwaren schön einzupacken, die Kasse zu behandeln und Bestellungen aufzunehmen. Ich habe die Kunden nett betreut und konnte mit meinen Mitarbeitern gut zusammenarbeiten.
+                  Der Ostbahnhof ist der verkehrsreichste Bahnhof in München, deswegen lernte ich schnell und pünktlich zu arbeiten. </p>
+            <dt>2019</dt><dd>Taxisgarten</dd>
+            <p>Im Juli 2019 bin ich nach München gezogen, und habe kurzfristig einen Job als Kassenhilfskraft im Taxisgarten erworben.
+                 Die Arbeit war saisonal und mein Vertrag dauerte bis Ende Oktober.</p>
+            
+        </dl>
+    </section>
+    <section>
+        <h1>Interesse</h1>
+        <p>Musik</p>
+        <p>Seit Oktober 2015 war ich auch Kantorin und alleinige Chorleiterin der Evangelischen Gemeinde Csillaghegy. In der Gemeinde habe ich im Jahr 2018 im Kauf einer neuen Orgel signifikante Arbeit zugetragen: Preisanfragen erstellt, technische Eigenschaften und Klang von ähnlichen Orgeln im Umkreis verglichen, Kontakte gehalten, und das Musikalische Leben auf höheres Niveau gesetzt.
+Ich bin Mitgründerin und Mitchorleiterin eines kleinen achtköpfigen Kammerchors namens „Schwalbe“.</p>
 
-<p> <em>Sehr wichtige </em><strong>Information. ez egy inline elem, de a p: már blokk elem
-</strong>Mit em und strong.</p>
-<p> <i>Sehr wichtige </i><b>Information. Wir wissen das.
-</b>Mit i und b.</p>
-<p><a href="about.html">Zur dem About seite</a></p>
-<p><a href="Pages/orders.html">Zu der Orders</a></p>
- 
+    </section>
+    <section id="timeline">
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>2020</h2>
+                    <p>Web-Entwickler Kurs</p>
+                    <p>online Unterrichte, 20 Stunden, ausgezeignete Ergebnis</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>2020</h2>
+                    <p>Goethe Zertifikat B2</p>
+                    <p>ausgezeignete Ergebnis</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                <h2>2019</h2>
+                <p>Lorem ipsum..</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <footer>
+
+    </footer>
+
+
+    <script type="text/javascript" src="javascript.js"></script>
 
 </body>
+
 </html>
