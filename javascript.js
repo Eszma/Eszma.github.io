@@ -23,6 +23,28 @@ $("#nav-about").click(function() {
     closeMenuOnMobile();
 });
 
+$("#nav-school").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#school").offset().top - scrollOffset
+    }, scrollTime);
+    closeMenuOnMobile();
+});
+
+
+$("#nav-work").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#work").offset().top - scrollOffset
+    }, scrollTime);
+    closeMenuOnMobile();
+});
+
+$("#nav-interest").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#interest").offset().top - scrollOffset
+    }, scrollTime);
+    closeMenuOnMobile();
+});
+
 $("#burger").click(function() {
     let menu = $("nav ul");
     if ( menu.hasClass("active") ) {
