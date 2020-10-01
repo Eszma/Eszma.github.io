@@ -5,17 +5,22 @@
 }
 
 body {
-    background-color: black;
-    background-image: url("fecske.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background-color: whitesmoke;
     /*filter: blur(8px);*/
+    background-image: url("/fecske/fecske-drot.jpg");
+    background-size: cover;
+    margin:0;
 }
 
 header {
     font-size: 24px;
-    
+    /*background-image: url("/fecske/fecske-drot-ff3.jpg");*/
+    background-color: rgb(29, 29, 110);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; 
+    height: 10rem;
+    margin: 0;
 }
 
 header #home {
@@ -24,10 +29,11 @@ header #home {
     border: dotted yellow;
 }
 
-header #home a{
+header #home a {
+    font-size: 24px;
     list-style: none;
     text-decoration: none;
-    color:blue;
+    color:black;
 }
 header #home a:hover {
     border-bottom: 2px dotted teal;
@@ -43,13 +49,52 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    
 }
+
 nav ul li a{
     text-decoration: none;
-    color: blue;
+    color: black;
 }
 
 nav ul li a:hover {
     border-bottom: 2px dotted teal;
 }
+#parent {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    outline: 1px solid red;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0,0,0,0.7);
+}
+.box-intro {
+    outline: 1px solid green;
+    font-size: 64px;
+    color: mintcream;
+}
+#body-img {
+    width: 100%;
+    height: 100%;
+}
+#random-content {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(224, 212, 212);
+}
+.button {
+    place-items: center;
+}
+
+footer {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+ footer p {
+    text-align: center;
+    color: darkblue;
+ }

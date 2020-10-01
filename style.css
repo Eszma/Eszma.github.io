@@ -92,24 +92,3 @@ section {
 #details dl dd {
     width: 65%;
 }
-#social {
-    background-color: teal;
-    width: 100%;
-}
-#social ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    width: 60%;
-    margin: 0 auto;
-    padding: 1rem;
-}
-#social ul li a {
-    height: 32px;
-    width: 32px;
-    font-size: 32px;
-    line-height: 32px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-}

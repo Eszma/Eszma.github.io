@@ -5,15 +5,22 @@
 }
 
 body {
-    background-color: black;
-    background-image: url("/fecske.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background-color: whitesmoke;
+    margin:0;
+    padding:0;
+    border:0;
+    /*filter: blur(8px);*/
 }
+
 header {
     font-size: 24px;
-    
+    /*background-image: url("/fecske/fecske-drot.jpg");*/
+    background-color: royalblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; 
+    height: 5rem;
+    margin: 0;
 }
 
 header #home {
@@ -23,9 +30,10 @@ header #home {
 }
 
 header #home a{
+    font-size: 24px;
     list-style: none;
     text-decoration: none;
-    color:blue;
+    color:black;
 }
 header #home a:hover {
     border-bottom: 2px dotted teal;
@@ -45,9 +53,53 @@ nav ul {
 }
 nav ul li a{
     text-decoration: none;
-    color: blue;
+    color: black;
 }
 
 nav ul li a:hover {
     border-bottom: 2px dotted teal;
+}
+section {
+    background-color: royalblue;
+    position: relative;
+    width: 50%;
+    top: -2rem;
+    padding: 20px 20px 0;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+    font-size: larger;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    float: center;
+}
+section h1 {
+    margin: 10px 10px 30px;
+    text-align: center;
+}
+
+section p {
+    padding: 20px;
+}
+
+#proba {
+    background-color: gainsboro;
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 130.5vh;
+}
+
+#jel {
+    background-color: gainsboro;
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 130.5vh;
+
+}
+#footer {
+    background-color: royalblue ;
+    margin: 0;
+    border:0;
+    padding: 0;
 }

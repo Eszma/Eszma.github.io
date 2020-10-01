@@ -5,16 +5,18 @@
 }
 
 body {
-    background-color: black;
-    background-image: url("/fecske.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background-color: whitesmoke;
+    /*filter: blur(8px);*/
 }
 
 header {
     font-size: 24px;
-    
+    background-image: url("/fecske/fecske-drot.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; 
+    height: 10rem;
+    margin: 0;
 }
 
 header #home {
@@ -24,9 +26,10 @@ header #home {
 }
 
 header #home a{
+    font-size: 24px;
     list-style: none;
     text-decoration: none;
-    color:blue;
+    color:black;
 }
 header #home a:hover {
     border-bottom: 2px dotted teal;
@@ -46,9 +49,32 @@ nav ul {
 }
 nav ul li a{
     text-decoration: none;
-    color: blue;
+    color: black;
 }
 
 nav ul li a:hover {
     border-bottom: 2px dotted teal;
+}
+
+section {
+    background-color: rgba(29, 29, 110, 0.877);
+    position: relative;
+    width: 50%;
+    top: -2rem;
+    padding: 20px 20px;
+    margin: 0 auto 2rem;
+    border-radius: 5px;
+    text-align: left;
+    font-size: larger;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+section h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+section h3 {
+    margin: 20px 0 10px;
+    text-align: left;
 }
