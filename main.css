@@ -91,7 +91,6 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-
 }
 nav ul li {
     height: 2rem;
@@ -317,7 +316,7 @@ section {
     margin-bottom: 20px;
 }
 
-footer nav {
+footer {
     position: static;
     margin-left: auto;
     margin-right: auto;
@@ -329,6 +328,24 @@ footer .social {
 footer .social svg {
     stroke: #fff;
 }
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer ul li {
+    margin-bottom: 1rem;
+}
+footer ul li a {
+    text-decoration: none;
+    color: white;/*darkred;*/
+    cursor: pointer;
+    user-select: none;
+}
+footer ul li a:hover {
+    border-bottom: 3px solid teal;
+}
+
 /* Ha számítógépen szűkebb az ablakméret */
 @media screen and (max-aspect-ratio: 3/2) {
     /* Profilkép és adatok egymás alá */
