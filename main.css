@@ -345,7 +345,19 @@ footer ul li a {
 footer ul li a:hover {
     border-bottom: 3px solid teal;
 }
-
+#toTop {
+    width: 8rem;
+    margin: 0.5rem auto;
+    text-align: center;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+    border:1px solid white;
+    /*position: fixed;
+    bottom: 0;
+    right: 0;*/
+}
 /* Ha számítógépen szűkebb az ablakméret */
 @media screen and (max-aspect-ratio: 3/2) {
     /* Profilkép és adatok egymás alá */

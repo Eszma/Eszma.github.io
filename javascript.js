@@ -60,3 +60,9 @@ $("#burger").click(function() {
     $("nav ul").toggle();
 });*/
 
+$("#toTop").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: 0
+    }, scrollTime);
+    closeMenuOnMobile();
+});
