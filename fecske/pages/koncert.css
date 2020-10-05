@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-color:  rgb(29, 29, 110);
     /*filter: blur(8px);*/
 }
 
@@ -22,7 +22,6 @@ header {
 header #home {
     position: absolute;
     left: 0;
-    border: dotted yellow;
 }
 
 header #home a{
@@ -32,7 +31,7 @@ header #home a{
     color:black;
 }
 header #home a:hover {
-    border-bottom: 2px dotted teal;
+    border-bottom: 2px solid teal;
 }
 nav {
     width: 60%;
@@ -53,32 +52,38 @@ nav ul li a{
 }
 
 nav ul li a:hover {
-    border-bottom: 2px dotted teal;
+    border-bottom: 2px solid teal;
 }
-section #timeline {
+footer {
+    height: 5rem;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    border-top:2px solid teal;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: transparent;
+    width: 100%;
+}
+                h2 {
+                    text-align: center;
+                }
+section#timeline {/*nem a timeline element, hanem a section ami tartalmazza a timeline-t */
     position: relative;
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
     top: -2rem;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-    text-align: left;
     border-radius: 5px;
-    font-size: larger;
-    padding: 20px 20px;
-}
-    
-}
-#timeline { /*nem a timeline element, hanem a section ami tartalmazza a timeline-t */
-    box-shadow: none;
     background-color: transparent;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-    border-radius: 5px;
     text-align: center;
 }
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
 }
   
@@ -91,12 +96,13 @@ section #timeline {
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -3px;
+    /*margin-left: -3px;*/
 }
   
 /* Container around content */
 .container {
     padding: 10px 40px;
+    box-sizing: border-box;
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -108,7 +114,7 @@ section #timeline {
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
+    right: -19.5px; /* (25-px-width + 2*4-px-border)/2 + 6-px-timeline-line-width/2 */
     background-color: white;
     border: 4px solid #106691;
     top: 15px;
@@ -145,6 +151,7 @@ section #timeline {
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
+    box-sizing: border-box;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -159,18 +166,52 @@ section #timeline {
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
+    box-sizing: border-box;
 }
 
 /* Fix the circle for containers on the right side */
 .right::after {
-    left: -16px;
+    left: -14.5px;
 }
 
 /* The actual content */
 .content {
-    padding: 0.5rem;
+    padding: 20px 30px;
     background-color: white;
     position: relative;
     border-radius: 5px;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+      .timeline::after {
+        left: 31px;
+      }
+    
+    /* Full-width containers */
+      .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+    
+    /* Make sure that all arrows are pointing leftwards */
+      .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+    
+    /* Make sure all circles are at the same spot */
+      .left::after, .right::after {
+        left: 15px;
+      }
+    
+    /* Make all right containers behave like the left ones */
+      .right {
+        left: 0%;
+      }
+    }

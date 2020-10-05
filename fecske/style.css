@@ -26,7 +26,6 @@ header {
 header #home {
     position: absolute;
     left: 0;
-    border: dotted yellow;
 }
 
 header #home a {
@@ -36,7 +35,7 @@ header #home a {
     color:black;
 }
 header #home a:hover {
-    border-bottom: 2px dotted teal;
+    border-bottom: 2px solid teal;
 }
 nav {
     width: 60%;
@@ -57,7 +56,7 @@ nav ul li a{
 }
 
 nav ul li a:hover {
-    border-bottom: 2px dotted teal;
+    border-bottom: 2px solid teal;
 }
 #parent {
     height: 100vh;
@@ -70,13 +69,13 @@ nav ul li a:hover {
     background-color: rgba(0,0,0,0.7);
 }
 .box-intro {
-    outline: 1px solid green;
+    /*outline: 1px solid green;*/
     font-size: 64px;
     color: mintcream;
 }
 #body-img {
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
 }
 #random-content {
     margin: 0;
@@ -88,13 +87,12 @@ nav ul li a:hover {
 .button {
     place-items: center;
 }
-
 footer {
-    margin: 0;
-    border: 0;
-    padding: 0;
+    margin: 0 auto;
+    height: 5rem;
+    background-color: whitesmoke;
+    border-top:2px solid teal;
 }
  footer p {
     text-align: center;
-    color: darkblue;
  }

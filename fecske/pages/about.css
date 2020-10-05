@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-color:  rgb(29, 29, 110);
     /*filter: blur(8px);*/
 }
 
@@ -22,7 +22,6 @@ header {
 header #home {
     position: absolute;
     left: 0;
-    border: dotted yellow;
 }
 
 header #home a{
@@ -32,7 +31,7 @@ header #home a{
     color:black;
 }
 header #home a:hover {
-    border-bottom: 2px dotted teal;
+    border-bottom: 2px solid teal;
 }
 nav {
     width: 60%;
@@ -53,11 +52,21 @@ nav ul li a{
 }
 
 nav ul li a:hover {
-    border-bottom: 2px dotted teal;
+    border-bottom: 2px solid teal;
+}
+#proba {
+    text-align: center;
+    background-color: transparent;
+}
+#jel {
+    text-align: center;
 }
 
+#jel p {
+    text-align: center;
+}
 section {
-    background-color: rgba(29, 29, 110, 0.877);
+    background-color: rgba(245, 245, 245, 0.95);
     position: relative;
     width: 50%;
     top: -2rem;
@@ -77,4 +86,27 @@ section h1 {
 section h3 {
     margin: 20px 0 10px;
     text-align: left;
+}
+
+footer {
+    height: 10rem;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    border-top:2px solid teal;
+    margin: 0 auto;
+    font-size: small;
+}
+.footer {
+    position: relative;
+    top:0;
+    border-radius: 0;
+    box-shadow: 0;
+    margin: 0;
+
+
+}
+footer h1 {
+    text-align: center;
+    margin: 0;
 }
