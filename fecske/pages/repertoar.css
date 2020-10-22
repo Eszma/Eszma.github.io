@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Dancing+Script&family=Lora:ital,wght@0,400;0,600;1,400&family=Shadows+Into+Light&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap');
 * {
     margin:0;
     padding:0;
@@ -5,13 +6,18 @@
 }
 
 body {
-    background-color: rgb(29, 29, 110)
-    /*filter: blur(8px);*/
+    font-family: 'Lora', serif;
+    background-color: rgb(29, 29, 110);
+    background-image: url("/fecske/fecske-drot.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
 }
 
 header {
     font-size: 24px;
-    background-image: url("/fecske/fecske-drot.jpg");
+    background-color: rgb(29, 29, 110);
+    /*background-image: url("/fecske/fecske-drot.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom; 
@@ -22,6 +28,8 @@ header {
 header #home {
     position: absolute;
     left: 0;
+    left: 10px;
+    font-family: 'Dancing Script', cursive;
 }
 
 header #home a{
@@ -31,7 +39,9 @@ header #home a{
     color:black;
 }
 header #home a:hover {
-    border-bottom: 2px solid teal;
+    /*border-bottom: 2px solid teal;*/
+    /*font-size: 30px;*/
+    text-shadow: 1px 1px grey;
 }
 nav {
     width: 60%;
@@ -52,11 +62,14 @@ nav ul li a{
 }
 
 nav ul li a:hover {
-    border-bottom: 2px solid teal;
+    /*border-bottom: 2px solid teal;*/
+    /*font-size: 30px;*/
+    text-shadow: 1px 1px black;
 }
 footer {
     height: 5rem;
-    background-color: whitesmoke;
+    background-color: black;
+    color:mintcream;
     display: flex;
     justify-content: space-evenly;
     border-top: 2px solid teal;
@@ -65,7 +78,6 @@ footer {
     width: 100%;
 }
 
-}
 h2 {
     text-align: center;
 }
@@ -99,6 +111,7 @@ dl {
     line-height: 1.7rem;
     position: relative;
     justify-content: center;
+    left: 8rem;
 }
 
 dl dt {

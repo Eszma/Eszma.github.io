@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Dancing+Script&family=Lora:ital,wght@0,400;0,600;1,400&family=Shadows+Into+Light&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap');
 * {
     margin:0;
     padding:0;
@@ -5,12 +6,11 @@
 }
 
 body {
-    background-color: rgb(29, 29, 110);
-    margin:0;
-    padding:0;
-    border:0;
+    background-color:  rgb(29, 29, 110);
     /*filter: blur(8px);*/
+    font-family: 'Lora', serif;
 }
+
 
 header {
     font-size: 24px;
@@ -26,6 +26,8 @@ header {
 header #home {
     position: absolute;
     left: 0;
+    left: 10px;
+    font-family: 'Dancing Script', cursive;
 }
 
 header #home a{
@@ -35,7 +37,9 @@ header #home a{
     color:black;
 }
 header #home a:hover {
-    border-bottom: 2px solid teal;
+    /*border-bottom: 2px solid teal;*/
+    /*font-size: 30px;*/
+    text-shadow: 0.2px 0.2px black;
 }
 nav {
     width: 60%;
@@ -56,7 +60,9 @@ nav ul li a{
 }
 
 nav ul li a:hover {
-    border-bottom: 2px solid teal;
+    /*border-bottom: 2px solid teal;*/
+    /*font-size: 30px;*/
+    text-shadow: 0.2px 0.2px black;
 }
 section {
     background-color: whitesmoke;
@@ -81,25 +87,29 @@ section p {
 }
 
 #proba {
-    background-color: transparent;
+    background-color: mintcream;
     position: relative;
     float: left;
     width: 20%;
-    height: 130.5vh;
+    height: 50vh;
+    top:10rem;
+    vertical-align: middle;
 }
 
 #jel {
-    background-color: transparent;
+    background-color: mintcream;
     position: relative;
     float: right;
     width: 20%;
-    height: 130.5vh;
-
+    height: 50vh;
+    top:10rem;
+    vertical-align: middle;
 }
 footer {
     margin: 0 auto;
     height: 5rem;
-    background-color: whitesmoke;
+    background-color: black;
+    color:mintcream;
     border-top:2px solid teal;
     text-align: center;
 }

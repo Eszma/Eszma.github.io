@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    border:0;
+    padding:0;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 100vw;
+}
+body {
+    /*background-image: url('/receptek/bgr.jpg');
+    background-repeat: no-repeat;*/
+    background-color: rgb(9, 104, 9);
+    width: 100%;
+}
+header {
+    padding: 100px 80px;
+    text-align: center;
+    font-size: 40px;
+    background-image: url('/receptek/header2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+nav {
+    width:25%;
+    float: left;
+    margin-left: 40px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li a {
+    color: navy;
+    text-decoration: none;
+    display: block;
+    padding: 15px 0;
+}
+
+nav a:hover {
+    text-shadow: 0 0 0.5px black;
+    padding: 15px;
+}
+
+main {
+    width: 60%;
+    float: left;
+}
+
+footer{
+    margin-bottom: 0;
+    padding: 20px 0;
+}
+#copyright {
+    float: left;
+}
+
+footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+footer a {
+    color: red;
+    float: left;
+    text-decoration: none;
+
+}
