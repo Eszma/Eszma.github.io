@@ -78,9 +78,10 @@ nav ul li a:hover {
 }
 .box-intro {
     /*outline: 1px solid green;*/
+    cursor:pointer;
+    font-family: 'Dancing Script', cursive;
     font-size: 64px;
     color: mintcream;
-    font-family: 'Dancing Script', cursive;
 }
 #body-img {
     width: 100%;
